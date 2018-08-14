@@ -1,0 +1,35 @@
+{
+  "name": "nigda",
+  "version": "1.0.0",
+  "description": "Nigda web page",
+  "main": "pages/index.js",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "koa": "^2.5.2",
+    "koa-router": "^7.4.0",
+    "next": "^6.1.1",
+    "path": "^0.12.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3jin/nigda.web.git"
+  },
+  "author": "Sejin Jeon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/3jin/nigda.web/issues"
+  },
+  "homepage": "https://github.com/3jin/nigda.web#readme"
+}
