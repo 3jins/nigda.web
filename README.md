@@ -1,2 +1,15 @@
 # nigda.web
-니가 그리고 싶은거 다 그려!
+
+A web site for Nigda, a drawing group.
+
+### Demo
+
+```bash
+> git clone
+> cd ./nigda.web
+> npm install
+> npm run dev
+```
+
+Then, take a look in http://localhost:5913
+
