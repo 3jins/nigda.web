@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import flush from 'styled-jsx/server';
 
 import reducers from '../reducers/index';
+import stylesheet from '../styles/index.sass';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -25,6 +26,7 @@ export default class MyDocument extends Document {
           </Provider>
           <NextScript />
         </body>
+        <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
       </html>
     );
   }
