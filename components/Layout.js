@@ -4,7 +4,9 @@ import Nav from './Nav';
 const Layout = ({ content }) => (
   <div>
     <Nav />
-    {content}
+    <div className="content">
+      {content}
+    </div>
   </div>
 );
 

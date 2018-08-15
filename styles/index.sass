@@ -1,6 +1,40 @@
-$primary-color: orange
+$primary-color: #ff6050
+$light-primary-color: #ffc760
+$secondary-color: #50c0a0
+$light-secondary-color: #a0ffc0
 
-p
-  color: $primary-color
+$big-content-pixel: 18px
+$normal-content-pixel: 15px
+$small-content-pixel: 12px
+
+$nav-height: 3em
+$side-margin: 3em
+
+body
+  width: 100%
+  margin: 0
+  padding: 0
+
 .nav
-  background-color: black
+  background-color: transparent
+  color: $secondary-color
+  font-size: $big-content-pixel
+  height: $nav-height
+  box-shadow: 0 1px 5px 0 #aaa
+  .logo
+    margin: calc(#{$nav-height} * 0.15) 1em
+    img
+      height: calc(#{$nav-height} * 0.7)
+  div
+    display: inline-block
+  .menu
+    float: right
+    .menu-item
+      width: 5em
+      margin: auto 0
+      text-align: center
+      cursor: pointer
+
+.content
+  margin: 0 $side-margin
+  font-size: $normal-content-pixel
