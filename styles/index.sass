@@ -8,12 +8,17 @@ $normal-content-pixel: 15px
 $small-content-pixel: 12px
 
 $nav-height: 3em
-$side-margin: 3em
+$side-padding: 3em
 
 body
   width: 100%
   margin: 0
   padding: 0
+
+.bold-words
+  font-weight: bold
+.primary-color-words
+  color: $primary-color
 
 .nav
   background-color: transparent
@@ -36,5 +41,33 @@ body
       cursor: pointer
 
 .content
-  margin: 0 $side-margin
-  font-size: $normal-content-pixel
+  .home-main
+    $home-main-height: calc((100vh - #{$nav-height}) * 0.7)
+    height: $home-main-height
+    text-align: center
+    .nigda-text-box
+      height: 100%
+      padding: calc(#{$home-main-height} * 0.37 / 2) 0
+      p
+        display: flow-root
+        margin: 0
+        line-height: 1em
+      .p-you
+        font-size: calc(#{$home-main-height} * 0.21)
+      .p-draw, .p-wanna, .p-everything
+        font-size: calc(#{$home-main-height} * 0.14)
+  .home-sub
+    width: 100%
+    font-size: $big-content-pixel
+    background-color: $primary-color
+    height: calc((100vh - #{$nav-height}) * 0.3)
+    text-align: center
+    display: table
+    p
+      display: table-cell
+      vertical-align: middle
+      padding: 0 $side-padding
+      color: white
+
+  .home-gallery
+    font-size: $normal-content-pixel
