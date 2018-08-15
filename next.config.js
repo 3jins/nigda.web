@@ -29,6 +29,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif)/,
+        loader: 'url-loader',
+      },
     );
     return config;
   },
