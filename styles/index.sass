@@ -1,3 +1,6 @@
+@import url('https://cdn.rawgit.com/3jin/free-webfonts/master/BusanBada/BusanBada.css')
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css')
+
 $primary-color: #ff6050
 $light-primary-color: #ffc760
 $secondary-color: #50c0a0
@@ -17,6 +20,7 @@ body
 
 .bold-words
   font-weight: bold
+
 .primary-color-words
   color: $primary-color
 
@@ -41,6 +45,7 @@ body
       cursor: pointer
 
 .content
+  font-family: #{NanumSquare}
   .home-main
     $home-main-height: calc((100vh - #{$nav-height}) * 0.7)
     height: $home-main-height
@@ -48,12 +53,16 @@ body
     .nigda-text-box
       height: 100%
       padding: calc(#{$home-main-height} * 0.37 / 2) 0
+      font-family: #{BusanBada}
       p
         display: flow-root
         margin: 0
         line-height: 1em
       .p-you
-        font-size: calc(#{$home-main-height} * 0.21)
+        /* BusanBada prints characters a half of height above... */
+        $size: calc(#{$home-main-height} * 0.21)
+        font-size: $size
+        margin-top: calc(#{$size} / 2)
       .p-draw, .p-wanna, .p-everything
         font-size: calc(#{$home-main-height} * 0.14)
   .home-sub
